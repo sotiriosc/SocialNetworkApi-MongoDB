@@ -1,13 +1,12 @@
 const router = require('express').Router();
-const UserNameRoutes = require('./userRoutes');
-const ThoughtsRoutes = require('./thoughtsRoutes');
-const EmailRoutes = require('./emailRoutes');
-const FriendRoutes = require('friendRoutes');
+const userRoutes = require('./userRoutes');
+const thoughtRoutes = require('./thoughtRoutes');
 
+// Other route imports here
 
-router.use('./userNameRoutes', UserNameRoutes);
-router.use('./thoughtsRoutes', ThoughtsRoutes);
-router.use('./emailRoutes', EmailRoutes);
-router.use('friendRoutes', FriendRoutes);
+router.use('/users', userRoutes);
+router.use('/thoughts', thoughtRoutes);
+// Other router.use() here
 
 module.exports = router;
+

@@ -1,5 +1,9 @@
-const { connect, connection } = require('mongoose');
+const mongoose = require('mongoose');
 
-connect('mongodb://127.0.0.1:27017/developersApplications');
+const connectionString = 'mongodb://127.0.0.1:27017/developersApplications';
 
-module.exports = connection;
+mongoose.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true });
+
+const connection = mongoose.connection;
+
+module.exports = { connectionString };
