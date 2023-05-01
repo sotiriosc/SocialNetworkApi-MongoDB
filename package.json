@@ -3,5 +3,23 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^7.1.0"
-  }
+  },
+  "name": "socialnetworkapi-mongodb",
+  "description": "In order to complete this project I utilized the NOSQL DAY 3 exercises as a template in addition to all the knowledge taught by my instructor, Mr. Apostle.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sotiriosc/SocialNetworkApi-MongoDB.git"
+  },
+  "author": "Sotirios Chortogiannos",
+  "license": "(MIT)",
+  "bugs": {
+    "url": "https://github.com/sotiriosc/SocialNetworkApi-MongoDB/issues"
+  },
+  "homepage": "https://github.com/sotiriosc/SocialNetworkApi-MongoDB#readme"
 }
